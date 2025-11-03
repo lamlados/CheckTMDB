@@ -103,7 +103,7 @@ def write_host_file(hosts_content: str, filename: str) -> None:
         hosts_content = hosts_content + "\n" + (get_github_hosts() or "")
     with open(output_file_path, "w", encoding='utf-8') as output_fb:
         output_fb.write(hosts_content)
-        printc
+        print("\n~最新TMDB" + filename + "地址已更新~")
 
 def get_github_hosts() -> None:
     github_hosts_urls = [
